@@ -1,0 +1,69 @@
+/* Playground-only layout styles - not part of the Northline theme itself. */
+.pg {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.pg-header {
+  margin-bottom: 32px;
+}
+
+.pg-header h1 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.pg-header p {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--neutral-500);
+  margin: 0;
+}
+
+.pg-category {
+  margin: 56px 0 4px;
+}
+
+.pg-category:first-of-type {
+  margin-top: 0;
+}
+
+.pg-section {
+  margin-bottom: 48px;
+}
+
+.pg-section h2 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--neutral-400);
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 8px;
+  margin: 0 0 20px;
+}
+
+.pg-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.pg-variant {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pg-variant__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--neutral-400);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}

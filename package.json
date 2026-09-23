@@ -1,0 +1,15 @@
+{
+  "name": "northline-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=playground",
+    "build:playground": "npm run build --workspace=playground",
+    "typecheck": "npm run typecheck --workspace=northline"
+  },
+  "license": "MIT"
+}
