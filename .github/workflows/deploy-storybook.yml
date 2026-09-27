@@ -22,7 +22,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm ci
+      # npm ci is skipped in favor of npm install: the lockfile was generated
+      # on macOS ARM and npm has a known bug (npm/cli#4828) resolving
+      # platform-specific optional dependencies (rolldown's native binding)
+      # for a different OS/arch than the one the lockfile came from.
+      - run: npm install
       - run: npm run build-storybook --workspace=northline
       - uses: actions/upload-pages-artifact@v3
         with:
